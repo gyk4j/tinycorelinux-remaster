@@ -15,20 +15,6 @@ I am using the following as the remastering host:
 - [Alpine 3.20][alpine]
 - [Tiny Core Linux 15.0][tinycore]
 
-![Boot](../../wiki/assets/images/1-kernel.png)
-
-_Fig 1. Bootloader decompressing and loading kernel_
-
-![Services and Daemons](../../wiki/assets/images/2-booting.png)
-
-_Fig 2. Kernel booting and starting services_
-
-![Shutdown](../../wiki/assets/images/3-shutdown.png)
-
-_Fig 3. Shut down_
-
-For more information, see the [Wiki](../../wiki/Home).
-
 [tinycore]: http://www.tinycorelinux.net
 [ubuntu-jammy]: https://releases.ubuntu.com/jammy/
 [alpine]: https://www.alpinelinux.org
