@@ -1,0 +1,23 @@
+#!/bin/sh
+
+##############################################################################
+#                            License & Copyright                             #
+#                                                                            #
+# The materials herein are from "Into the Core: A look at Tiny Core Linux"   #
+# (http://www.tinycorelinux.net/book.html) by Lauri Kasanen et al. The book  #
+# is licensed under the CC BY-NC-SA 4.0 license (http://creativecommons.org/ #
+# licenses/by-nc-sa/4.0/). (C) 2013 Lauri Kasanen.                           #
+##############################################################################
+
+CONFDIR=/usr/local/etc
+
+[ -h $CONFDIR/nanorc ] && \
+  rm -f $CONFDIR/nanorc && \
+  cp -a /tmp/tcloop/nano/$CONFDIR/nanorc \
+  $CONFDIR
+  
+# If the config file is a symlink,
+# remove it, and copy the real file
+# in its place.
+#
+# This is a no-op on copy2fs installs.
